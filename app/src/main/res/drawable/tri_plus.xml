@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 正三角 -->
+    <item android:state_enabled="true">
+        <rotate
+            android:fromDegrees="45"
+            android:pivotX="-40%"
+            android:pivotY="80%"
+            android:bottom="1dp"
+            android:left="1dp"
+            android:right="1dp"
+            android:top="1dp">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/colorAccent" />
+            </shape>
+        </rotate>
+    </item>
+        <item android:state_enabled="false">
+            <rotate
+                android:fromDegrees="45"
+                android:pivotX="-40%"
+                android:pivotY="80%">
+                <shape android:shape="rectangle">
+                    <solid android:color="#C0C0C0" />
+                </shape>
+            </rotate>
+        </item>
+    </selector>
+    </item>>
+</layer-list>

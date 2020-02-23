@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true">
+        <!-- 倒三角 -->
+        <rotate
+            android:fromDegrees="45"
+            android:pivotX="135%"
+            android:pivotY="15%"
+            android:toDegrees="45">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/colorAccent" />
+            </shape>
+        </rotate>
+    </item>
+        <item android:state_enabled="false">
+            <!-- 倒三角 -->
+            <rotate
+                android:fromDegrees="45"
+                android:pivotX="135%"
+                android:pivotY="15%"
+                android:toDegrees="45">
+                <shape android:shape="rectangle">
+                    <solid android:color="#C0C0C0" />
+                </shape>
+            </rotate>
+        </item>
+    </selector>
+    </item>>
+</layer-list>
